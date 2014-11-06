@@ -1,0 +1,24 @@
+body{
+    padding: 10px;
+}
+
+.web-div-header{
+   background: url("../images/full/marcoup.png") center no-repeat;
+    height: 83px;
+}
+
+.web-div-footer{
+    background: url("../images/full/marco-down.png") center no-repeat;
+    height: 500px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background: red;
+    }
+
+    .web-div-header{
+        background: url("../images/600/marcoup.png") center center no-repeat;
+        height: 83px;
+    }
+}

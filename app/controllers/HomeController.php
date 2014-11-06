@@ -4,9 +4,9 @@ use Tradicion\Entities\Producto;
 
 class HomeController extends BaseController {
 
-	public function showWelcome()
+	public function index()
 	{
-		return View::make('hello');
+		return View::make('web/edad');
 	}
 
     public function productos(){
