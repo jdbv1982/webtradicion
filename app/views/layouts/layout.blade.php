@@ -15,7 +15,7 @@
 <body>
     @include('layouts/header')
 
-<div class="col-xs-12">
+<div class="container">
     @yield('content')
 </div>
 

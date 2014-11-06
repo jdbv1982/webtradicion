@@ -1,5 +1,13 @@
 @extends('layouts/layout')
 
 @section('content')
-<h1>edad</h1>
+    <div class="div-pregunta">
+            ¿Tienes la edad legal mínima para consumir bebidas alcohólicas en el país en el que resides?
+    </div>
+    <div class="respuesta">
+        <a href="{{ route('entrar') }}">SI</a>
+    </div>
+    <div class="respuesta">
+        <a href="{{ route('salir')  }}">NO</a>
+    </div>
 @stop
