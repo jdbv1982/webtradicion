@@ -15,9 +15,12 @@ Route::get('/',['as'=>'home', 'uses'=>'HomeController@index']);
 
 Route::get('productos', ['as'=>'productos', 'uses'=>'HomeController@productos']);
 
-Route::get('entrar', ['as'=>'entrar', 'uses'=>'HomeController@entrar']);
+Route::get('inicio', ['as'=>'inicio', 'uses'=>'HomeController@inicio']);
 Route::get('salir', ['as'=>'salir', 'uses'=>'HomeController@salir']);
 
 
 Route::get('historia', ['as'=>'historia', 'uses'=>'HomeController@historia']);
+Route::get('proceso', ['as'=>'proceso', 'uses'=>'HomeController@proceso']);
+Route::get('productos', ['as'=>'productos', 'uses'=>'HomeController@productos']);
+Route::get('contacto', ['as'=>'contacto', 'uses'=>'HomeController@contacto']);
 

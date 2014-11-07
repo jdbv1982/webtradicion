@@ -44,8 +44,7 @@ img {
 
 .menu{
     text-align: center;
-    border-bottom: .2em solid #9C9B87;
-    width: 50%;
+    /*border-bottom: .2em solid #9C9B87;*/
 }
 
 .menu li{

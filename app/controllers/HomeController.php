@@ -9,8 +9,8 @@ class HomeController extends BaseController {
 		return View::make('web/edad');
 	}
 
-    public function entrar(){
-        return View::make('web/entrar');
+    public function inicio(){
+        return View::make('web/inicio');
     }
 
     public function salir(){
@@ -21,8 +21,17 @@ class HomeController extends BaseController {
         return View::make('web/historia');
     }
 
+    public function proceso(){
+        return View::make('web/proceso');
+    }
+
     public function productos(){
-        return Producto::all();
+        //return Producto::all();
+        return View::make('web/productos');
+    }
+
+    public function contacto(){
+        return View::make('web/contacto');
     }
 
 }
