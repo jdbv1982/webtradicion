@@ -18,3 +18,6 @@ Route::get('productos', ['as'=>'productos', 'uses'=>'HomeController@productos'])
 Route::get('entrar', ['as'=>'entrar', 'uses'=>'HomeController@entrar']);
 Route::get('salir', ['as'=>'salir', 'uses'=>'HomeController@salir']);
 
+
+Route::get('historia', ['as'=>'historia', 'uses'=>'HomeController@historia']);
+

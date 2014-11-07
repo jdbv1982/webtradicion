@@ -17,6 +17,10 @@ class HomeController extends BaseController {
         return View::make('web/salir');
     }
 
+    public function historia(){
+        return View::make('web/historia');
+    }
+
     public function productos(){
         return Producto::all();
     }
