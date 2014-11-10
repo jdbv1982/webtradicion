@@ -1,5 +1,5 @@
-@extends('layouts/layout')
+@extends('web/menu')
 
-@section('content')
+@section('sub-content')
     <h1>Contacto</h1>
 @stop

@@ -1,9 +1,9 @@
 @extends('layouts/layout')
 
 @section('content')
-<div id="div-content">
-				<div class="div-pregunta">Gracias por tu visita, regresa pronto.</div>
-				<div class="div-detalle"><img src=""></div>
+<div class="div-content">
+				<div class="div-despedida">Gracias por tu visita, regresa pronto.</div>
+				<div class="div-imagen-despedida"><img src="" alt=""></div>
 			</div>
 
 @stop

@@ -1,3 +1,3 @@
 <div class="web-div-header">
-    <img src="" alt=""/>
+    <img />
 </div>

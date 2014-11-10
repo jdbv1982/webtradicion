@@ -1,0 +1,122 @@
+body{
+    padding: 0px;
+    color: #9C9B87;
+}
+
+a{
+    text-decoration: none;
+    color: #9C9B87;
+}
+
+img {
+    border: none !important;
+    text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.div-pregunta{
+    text-align: center;
+    display: inline-block;
+    height: 60px;
+    width: 40%;
+    background: bottom left repeat-x url('../images/general/borde.png');
+}
+
+.respuesta{
+    display: inline-block;
+    padding: 0 1em 0 1em;
+    font-size: 2em;
+}
+
+.div-detalle img{
+    background: url("../images/general/detallech.png") center no-repeat;
+    height: 48px;
+    width: 30%;
+}
+
+.menu{
+    text-align: center;
+    /*border-bottom: .2em solid #9C9B87;*/
+}
+
+.menu li{
+    display: inline-block;
+    border-right:.1em solid #9C9B87;
+    padding: 0 1em;
+
+}
+
+
+/* Pantallas grandes */
+@media (min-width: 980px) {
+    .web-div-header{
+        background: url("../images/desktop/marcoup.png") center center no-repeat;
+        height: 83px;
+    }
+
+    .web-div-footer{
+        background: url("../images/desktop/marco-down.png") center bottom no-repeat;
+        height: 25em;
+    }
+
+
+
+}
+
+/* Laptops y tablets apaisadas */
+@media (min-width: 768px) and (max-width: 979px) {
+    .web-div-header{
+        background: url("../images/tablet/landscape/marcoup.png") center center no-repeat;
+        height: 83px;
+    }
+
+    .web-div-footer{
+        background: url("../images/tablet/landscape/marco-down.png") center bottom no-repeat;
+        height: 25em;
+    }
+
+
+
+}
+
+/* Tablets */
+@media (max-width: 767px) {
+    .web-div-header{
+        background: url("../images/tablet/portrait/marcoup.png") center center no-repeat;
+        height: 83px;
+    }
+
+    .web-div-footer{
+        background: url("../images/tablet/portrait/marco-down.png") center bottom no-repeat;
+        height: 18em;
+    }
+
+
+
+}
+
+/* Teléfonos */
+@media (max-width: 480px) {
+    .web-div-header{
+        background: url("../images/smart/marcoup.png") center center no-repeat;
+        height: 83px;
+    }
+
+    .web-div-footer{
+        background: url("../images/smart/marco-down.png") center bottom no-repeat;
+        height: 10em;
+    }
+
+
+
+
+
+}
