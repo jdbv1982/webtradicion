@@ -35,20 +35,17 @@
 				<div class="g5"></div>
     		</div>
     	</div>
-    	<div class="mezcal">
-    		imagen mezcal
-    	</div>
+    	<div class="mezcal"></div>
     	<div class="inicio-subcontenido">
     		<div class="inicio-desc">
-    			<div class="img-head">imagen head</div>
+    			<div class="img-head"></div>
     			<div class="descripcion">
 					<p><strong>Tradición Chagoya</strong>  es una empresa familiar dedicada a la producción y exportación de mezcales artesanales, originaria del distrito de <strong>Tlacolula, Oaxaca, México.</strong></p>
 					<p>Este linaje Mezcalero fundado en el año de 1897, se ha consolidado a lo largo del tiempo como pilares de la producción de mezcal en la región, con experiencia a la fecha de cinco generaciones familiares.</p>
     			</div>
-    			<div class="img-footer">imagen foot</div>
+    			<div class="img-footer"></div>
     		</div>
-    		<div class="promocional">  	
-    		imagen promocion		
+    		<div class="promocional">
     		</div>
     	</div>
     </div>
