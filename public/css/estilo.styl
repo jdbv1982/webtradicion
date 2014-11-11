@@ -6,25 +6,15 @@ body
 	font-family Georgia, "Times New Roman", Times, serif
 	font-size 90%
 
-nav
-	background menu-fondo
-	text-align left
-	z-index 9999
+.full-content
+	border 3px solid red
+	position relative
+	padding-bottom 1em
+	min-height 25em
+	width 90%
+	left 5%
 
-	.menu
-		margin 0
-		padding 0
-		overflow-x auto
-		white-space nowrap
-
-		li
-			display inline-block
-			a
-				color letras
-				display block
-				padding 0.2em
-				margin 0.5em 0.5em
-				text-decoration none
+/*Header y footer*/
 
 .web-div-header
 		width 100%
@@ -33,22 +23,29 @@ nav
 
 .footer
 	width 100%
+	height 200px
 	position relative
-	bottom 0	
+	bottom 0
+	//bottom 10em
+
+	.web-div-footer
+		width 100%
+		margin 0 auto
+		/*
+		background url(../images/smart/marco-down.png) center no-repeat
+		min-height 154px
+		display block
+		padding-bottom 20px
+			*/
 
 	.copyrigtht
-		width 100%
-		text-align center	
-		font-size .8em	
-
+		text-align center
 
 /*css para edad*/
-
 .div-mensaje
+	top 50px
 	position relative
-	top: 50px;
 	text-align center
-	z-index 2
 
 	a
 		text-decoration none
@@ -60,8 +57,8 @@ nav
 		background: bottom left repeat-x url(../images/general/borde.png)
 		margin-bottom 0.5em
 		padding 0 0 1em 0
-		width 50%
-		margin 0 25%
+		width 70%
+		margin 0 15%
 
 	.div-respuesta
 		display inline-block
@@ -75,99 +72,11 @@ nav
 	.borde-lateral-izquierdo
 		border-left 3px solid letras
 
-.div-imagen
-	text-align center
-	background url(../images/general/detallech.png) center no-repeat
-	height 2em
-	padding 1em
 
 
-/*css para salida*/
 
-.div-content
-	position relative
-	top 30px
 
-	.div-despedida
-		text-align center
-		background: bottom left repeat-x url(../images/general/borde.png)
-		padding-bottom 2em
-		width 50%
-		position absolute
-		left 25%
-		top 3em;
 
-	.div-imagen-despedida
-		text-align center
-		background url(../images/general/detallech.png) center no-repeat
-		position absolute
-		width 50%
-		top 8em
-		left 25%
-
-/*css pagina inicio*/
-
-.contenido
-	width 80%
-	left 10%
-	position relative
-
-	.generaciones
-		.titulo
-			font-size 1.5em
-			text-align center
-			font-weight bold
-			padding 1em 0
-
-		.generacion
-			height 14.5em
-
-			p
-				text-align center
-				margin 0
-				padding 0
-				height 4em
-				overflow hidden
-
-			.g1
-				background url(../images/general/marco1ppal.png) center no-repeat
-				height 10em
-
-			.g2
-				background url(../images/general/marco2ppal.png) center no-repeat
-				height 10em
-
-			.g3
-				background url(../images/general/marco3ppal.png) center no-repeat
-				height 10em
-
-			.g4
-				background url(../images/general/marco4ppal.png) center no-repeat
-				height 10em
-
-			.g5
-				background url(../images/general/marco5ppal.png) center no-repeat
-				height 10em
-
-	.mezcal
-		padding-top 5em
-		background url(../images/general/imagenppal.png) center no-repeat
-		height 30em
-
-	.inicio-subcontenido
-		z-index 1
-		.inicio-desc
-			.img-head
-				background url(../images/smart/ppaldetalleup.png) center no-repeat
-				height 3em
-
-			.descripcion
-				height 11em
-
-			.img-footer
-				background url(../images/smart/ppaldetalledown.png) center no-repeat
-				height 3em
-			
 
 
 

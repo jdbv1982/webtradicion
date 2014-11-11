@@ -7,6 +7,7 @@
     	<div class="div-respuesta borde-lateral-izquierdo"><a href="{{route('salir')}}">NO</a></div>
     	<div class="div-imagen"><img src="" alt=""></div>
     </div>
+
 @stop
 
 
