@@ -46,6 +46,7 @@
     			<div class="img-footer"></div>
     		</div>
     		<div class="promocional">
+    			
     		</div>
     	</div>
     </div>
