@@ -1,24 +1,19 @@
 letras = #9C9B87
 menu-fondo = #DEDEDE
-
 body
 	color letras
 	font-family Georgia, "Times New Roman", Times, serif
 	font-size 90%
-	
 nav
 	text-align left
 	z-index 9999
-	
 	.menu
 		margin 0
 		padding 0
 		overflow-x auto
 		white-space nowrap
-		
 		li
 			display inline-block
-			
 			a
 				color letras
 				display block
@@ -26,7 +21,6 @@ nav
 				margin 0.5em 0.5em
 				text-decoration none
 				font-weight bold
-
 .full-content
 	position relative
 	padding-bottom 1em
@@ -41,23 +35,18 @@ nav
 		width 100%
 		height 83px
 		background url(../images/smart/marcoup.png) center no-repeat
-
 .footer
 	width 100%
 	height 200px
 	position relative
 	bottom 0
-
 	.web-div-footer
-		width 100%		
-		
+		width 100%
 	.copyrigtht
 		text-align center
-		
 .div-imagen
 	background url(../images/general/detallech.png) center no-repeat
 	height 5em
-		
 
 /*css para edad*/
 .div-mensaje
@@ -65,12 +54,10 @@ nav
 	position relative
 	text-align center
 	z-index 8889
-
 	a
 		text-decoration none
 		color letras
 		font-size 1.3em
-		
 	.div-pregunta
 		font-size 1.2em
 		background: bottom left repeat-x url(../images/general/borde.png)
@@ -78,21 +65,17 @@ nav
 		padding 0 0 1em 0
 		width 70%
 		margin 0 15%
-
 	.div-respuesta
 		display inline-block
 		padding 1.2em 1.2em
 		font-size 1.5em
 		margin-top .5em
-
 	.borde-lateral-derecho
 		border-right 3px solid letras
-
 	.borde-lateral-izquierdo
 		border-left 3px solid letras
-		
-/*pagina de inicio*/
 
+/*pagina de inicio*/
 .contenido
 	padding 1em 0
 	.generaciones
@@ -100,14 +83,11 @@ nav
 			font-size 1.5em
 			text-align center
 			font-weight bold
-			
 		.generacion
 			text-align center
-			
 			.g-image
 				width 100%
 				height 10em
-			
 			.g1
 				background url(../images/general/marco1ppal.png) center no-repeat
 			.g2
@@ -117,41 +97,71 @@ nav
 			.g4
 				background url(../images/general/marco4ppal.png) center no-repeat
 			.g5
-				background url(../images/general/marco5ppal.png) center no-repeat	
-					
+				background url(../images/general/marco5ppal.png) center no-repeat
 	.mezcal
 		background url(../images/general/imagenppal.png) center no-repeat
 		margin 0 auto
 		height 30em
 		width 100%
 		background-size 100% 100%
-		
 	.inicio-subcontenido
 		.inicio-desc
 			.img-head
 				min-height 3em
 				background url(../images/general/ppaldetalleup.png) center no-repeat
 				background-size 100% 100%
-						
 			.img-footer
 				min-height 3em
 				background url(../images/general/ppaldetalledown.png) center no-repeat
 				background-size 100% 100%
-		
 		.promocion
 			.promocion-img
 				min-height 10em
-				background url(../images/general/mezcal-cuerudos-anejo.png) center no-repeat	
+				background url(../images/general/mezcal-cuerudos-anejo.png) center no-repeat
 				background-size 10% 100%
 				margin 0 auto
-				padding 1em				
-			
+				padding 1em
 			.promocion-nombre
 				text-align center
 				font-size .8em
 				font-weight bold
 				padding 1em
-					
+
+
+/*css para la pagina de la tradicion o historia*/
+
+.Historia
+	border 3px solid green
+	width 100%
+	&-arbol
+		border 3px solid yellow
+		background url(../images/general/arbolhis.png) center no-repeat
+		min-height 45em
+		display none
+	&-texto
+		border 3px solid black
+		.Historia-titulo
+			text-align center
+			font-size 2em
+			font-weight bold
+			padding-bottom 1em
+			border-bottom 1px solid
+			border 3px solid red
+		.Historia-contenido
+			border 3px solid blue
+
+		.Historia-menu
+			text-align center
+			li
+				color white
+				display inline-block
+				background #F69999
+				min-width 30px
+				border-radius 10px
+				padding 5px 5px
+				cursor pointer
+
+
 
 
 @import "media.styl"
