@@ -4,6 +4,8 @@ body
 	color letras
 	font-family Georgia, "Times New Roman", Times, serif
 	font-size 90%
+a
+	text-decoration none
 nav
 	text-align left
 	z-index 9999
@@ -30,9 +32,45 @@ nav
 
 /*Header y footer*/
 
+.Redes
+	width 90%
+	left 5%
+	min-height 32px
+	position relative
+	text-align center
+	.Redes-iconos
+		.icono
+			width 32px
+			height 32px
+			display inline-block
+			padding 0 1em
+	.Redes-idiomas
+		.link-idioma
+			display inline-block
+			background letras
+			padding 0.3em 1em
+			border-radius 10px
+			color white
+	&-facebook
+		background url(../images/general/fb.png) center no-repeat
+	&-twitter
+		background url(../images/general/tw.png) center no-repeat
+	&-linkedin
+		background url(../images/general/linkedin_circle_black-48.png) center no-repeat
+		background-size 32px 32px
+	&-mail-suscripcion
+		background url(../images/general/mail.png) center no-repeat
+		background-size 32px 32px
+
+
+
+
+
+
+
 .web-div-header
 		width 100%
-		height 83px
+		height 35px
 		background url(../images/smart/marcoup.png) center no-repeat
 .footer
 	width 100%
@@ -144,7 +182,7 @@ nav
 			text-align center
 			font-size 2em
 			font-weight bold
-			padding-bottom 1em			
+			padding-bottom 1em
 		.Historia-contenido
 			border-top 1px solid letras
 			border-bottom 1px solid letras
