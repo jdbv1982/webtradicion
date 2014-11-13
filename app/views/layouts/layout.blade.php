@@ -20,6 +20,7 @@
     </div>
 
     @include('layouts/footer')
+    @include('layouts.js')
 @yield('js')
 </body>
 </html>
