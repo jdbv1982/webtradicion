@@ -200,6 +200,13 @@ nav .menu li a {
   font-weight: bold;
   padding-bottom: 1em;
 }
+.Historia-texto .Historia-titulo .loader {
+  background: url("../images/general/loader.gif") center no-repeat;
+  height: 32px;
+  width: 32px;
+  float: left;
+  display: none;
+}
 .Historia-texto .Historia-contenido {
   border-top: 1px solid #9c9b87;
   border-bottom: 1px solid #9c9b87;
@@ -210,7 +217,6 @@ nav .menu li a {
   padding-bottom: 1em;
 }
 .Historia-texto .Historia-menu li {
-  color: #fff;
   display: inline-block;
   background: #9c9b87;
   min-width: 30px;
@@ -218,7 +224,10 @@ nav .menu li a {
   padding: 5px 5px;
   cursor: pointer;
 }
-@media screen and (min-width: 769px) {
+.Historia-texto .Historia-menu li a {
+  color: #fff;
+}
+@media screen and (min-width:769px) {
   nav {
     background: none;
     text-align: center;

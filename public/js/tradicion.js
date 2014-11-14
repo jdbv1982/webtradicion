@@ -1,15 +1,32 @@
-$(document).ready(function() {	
-	getContent('gethistoria',1, $('.contenido'));
+$(document).ready(function() {
+	getHistoria('gethistoria', 1 );
+	$(document).on('click','.menuhistoria', function(e){
+		getHistoria('gethistoria', $(this).attr('valor') );
+	});
 });
 
-function tradicion(titulo){
-	titulo.html("Some text and markup")
-}
 
-function getContent(url, id, sel){
-	 $.post(url,{id:id})
-        .done(function(data){
-            sel.html("jsjsj");
-            sel.html("nooooooooo");
-        });
+function getHistoria(url, id){
+	$("#imgloader").show();
+
+	$.ajax({
+		type: "POST",
+		dataType: "json",
+		url: url,
+		data: {id: id},
+		success: function(data){
+			$("#titulo").html(data['titulo']);
+			$("#Historia-contenido").html(data['contenido']);
+			$("#imgloader").hidde();
+		}
+
+	});
+
+
+	/*$.post(url,{id: id}, function(data) {
+	//	$("#loader").hidde();
+		$("#titulo").html(data['titulo']);
+		$("#Historia-contenido").html(data['contenido']);
+	});*/
+
 }

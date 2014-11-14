@@ -12,6 +12,7 @@ class HistoriaController extends BaseController {
 	}
 
 	public function getHistoria(){
-		return Response::json($this->historiaRepo->all());
+		$id = $_POST['id'];
+		return Response::json($this->historiaRepo->find($id));
 	}
 }
