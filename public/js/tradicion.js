@@ -1,14 +1,15 @@
 $(document).ready(function() {	
-	tradicion($("#titulo"));
+	getContent('gethistoria',1, $('.contenido'));
 });
 
 function tradicion(titulo){
 	titulo.html("Some text and markup")
 }
 
-function getContent(url, id){
-	$.post( url, { id: id }, function( data ) {
-		  console.log( data.titulo );
-		  console.log( data.contenido );
-		}, "json");
-}func
+function getContent(url, id, sel){
+	 $.post(url,{id:id})
+        .done(function(data){
+            sel.html("jsjsj");
+            sel.html("nooooooooo");
+        });
+}

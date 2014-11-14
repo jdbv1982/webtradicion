@@ -24,3 +24,6 @@ Route::get('proceso', ['as'=>'proceso', 'uses'=>'HomeController@proceso']);
 Route::get('productos', ['as'=>'productos', 'uses'=>'HomeController@productos']);
 Route::get('contacto', ['as'=>'contacto', 'uses'=>'HomeController@contacto']);
 
+//Route::post('gethistoria', ['uses'=>'HistoriaController@getHistoria']);
+Route::post('gethistoria', ['uses'=>'HistoriaController@getHistoria']);
+

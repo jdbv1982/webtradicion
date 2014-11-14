@@ -11,10 +11,10 @@ nav {
   z-index: 9999;
 }
 nav .menu {
-  margin: 0;
   padding: 0;
   overflow-x: auto;
   white-space: nowrap;
+  margin: 0 auto;
 }
 nav .menu li {
   display: inline-block;
@@ -22,10 +22,9 @@ nav .menu li {
 nav .menu li a {
   color: #9c9b87;
   display: block;
-  padding: 0.2em;
+  padding: 0.2em 1em;
   margin: 0.5em 0.5em;
   text-decoration: none;
-  font-weight: bold;
 }
 .full-content {
   position: relative;
@@ -43,17 +42,14 @@ nav .menu li a {
   text-align: center;
 }
 .Redes .Redes-iconos .icono {
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 21px;
   display: inline-block;
   padding: 0 1em;
 }
 .Redes .Redes-idiomas .link-idioma {
   display: inline-block;
-  background: #9c9b87;
-  padding: 0.3em 1em;
-  border-radius: 10px;
-  color: #fff;
+  color: #9c9b87;
 }
 .Redes-facebook {
   background: url("../images/general/fb.png") center no-repeat;
@@ -63,11 +59,11 @@ nav .menu li a {
 }
 .Redes-linkedin {
   background: url("../images/general/linkedin_circle_black-48.png") center no-repeat;
-  background-size: 32px 32px;
+  background-size: 23px 23px;
 }
 .Redes-mail-suscripcion {
   background: url("../images/general/mail.png") center no-repeat;
-  background-size: 32px 32px;
+  background-size: 23px 23px;
 }
 .web-div-header {
   width: 100%;
@@ -76,7 +72,7 @@ nav .menu li a {
 }
 .footer {
   width: 100%;
-  height: 200px;
+  height: 35px;
   position: relative;
   bottom: 0;
 }
@@ -222,7 +218,7 @@ nav .menu li a {
   padding: 5px 5px;
   cursor: pointer;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 769px) {
   nav {
     background: none;
     text-align: center;
@@ -234,13 +230,14 @@ nav .menu li a {
     border-left: 2px solid #9c9b87;
   }
   .full-content {
-    width: 50%;
-    left: 25%;
-    min-height: 45em;
-  }
-  .Redes {
     width: 60%;
     left: 20%;
+    min-height: 45em;
+    padding-top: 1em;
+  }
+  .Redes {
+    width: 90%;
+    left: 5%;
   }
   .Redes .Redes-iconos {
     width: 45%;
@@ -256,8 +253,9 @@ nav .menu li a {
     text-align: right;
   }
   .web-div-header {
-    height: 83px;
+    height: 86px;
     background: url("../images/tablet/landscape/marcoup.png") center no-repeat;
+    background-size: 81%;
   }
   .footer {
     bottom: 20em;
@@ -266,12 +264,16 @@ nav .menu li a {
     width: 100%;
     margin: 0 auto;
     background: url("../images/tablet/landscape/marco-down.png") center no-repeat;
+    background-size: 81%;
     min-height: 22em;
     display: block;
     padding-bottom: 20px;
   }
   .div-mensaje {
     top: 15em;
+  }
+  .contenido {
+    padding-top: 3em;
   }
   .contenido .generaciones {
     text-align: center;
@@ -316,6 +318,7 @@ nav .menu li a {
   }
   .web-div-header {
     background: url("../images/desktop/marcoup.png") center no-repeat;
+    background-size: 81%;
   }
   .footer {
     bottom: 31em;
@@ -324,6 +327,7 @@ nav .menu li a {
     width: 100%;
     margin: 0 auto;
     background: url("../images/desktop/marco-down.png") center no-repeat;
+    background-size: 81%;
     min-height: 33em;
     display: block;
     padding-bottom: 20px;

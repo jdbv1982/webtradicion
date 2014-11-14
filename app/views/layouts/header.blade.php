@@ -16,7 +16,7 @@
 	<div class="Redes-idiomas">
 		<a href="">
 			<div class="link-idioma">Español</div>
-		</a>
+		</a> | 
 		<a href="">
 			<div class="link-idioma">Ingles</div>
 		</a>
