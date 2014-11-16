@@ -3,6 +3,10 @@ $(document).ready(function() {
 	$(document).on('click','.menuhistoria', function(e){
 		getHistoria('gethistoria', $(this).attr('valor') );
 	});
+
+	$(document).on('mouseover','.menu-arbol-historia', function(e){
+		getHistoria('gethistoria', $(this).attr('valor'));
+	});
 });
 
 

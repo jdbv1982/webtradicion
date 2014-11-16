@@ -161,10 +161,16 @@ nav
 .Historia
 	width 100%
 	position relative
+	z-index 7777
 	&-arbol
 		background url(../images/general/arbolhis.png) center no-repeat
 		min-height 45em
 		display none
+		.menu-arbol
+			min-height 65px
+			min-width 10px
+			cursor pointer
+			z-index 777
 	&-texto
 		background #F6F5E1
 		width 100%
@@ -189,14 +195,14 @@ nav
 			position absolute
 			padding-bottom 1em
 			li
+				color white
 				display inline-block
 				background letras
 				min-width 30px
 				border-radius 10px
 				padding 5px 5px
 				cursor pointer
-				a
-					color white
+					
 
 
 

@@ -183,11 +183,18 @@ nav .menu li a {
 .Historia {
   width: 100%;
   position: relative;
+  z-index: 7777;
 }
 .Historia-arbol {
   background: url("../images/general/arbolhis.png") center no-repeat;
   min-height: 45em;
   display: none;
+}
+.Historia-arbol .menu-arbol {
+  min-height: 65px;
+  min-width: 10px;
+  cursor: pointer;
+  z-index: 777;
 }
 .Historia-texto {
   background: #f6f5e1;
@@ -217,6 +224,7 @@ nav .menu li a {
   padding-bottom: 1em;
 }
 .Historia-texto .Historia-menu li {
+  color: #fff;
   display: inline-block;
   background: #9c9b87;
   min-width: 30px;
@@ -224,10 +232,7 @@ nav .menu li a {
   padding: 5px 5px;
   cursor: pointer;
 }
-.Historia-texto .Historia-menu li a {
-  color: #fff;
-}
-@media screen and (min-width:769px) {
+@media screen and (min-width: 769px) {
   nav {
     background: none;
     text-align: center;
@@ -305,12 +310,12 @@ nav .menu li a {
   .Historia-arbol {
     display: inline-block;
     position: relative;
-    width: 43%;
+    width: 25%;
   }
   .Historia-texto {
-    top: 15%;
+    top: 8%;
+    min-height: 15em;
     right: 0;
-    vertical-aling: center;
     position: absolute;
     width: 52%;
     box-shadow: 10px 10px 5px #999;
