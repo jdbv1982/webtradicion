@@ -4,10 +4,10 @@ use Tradicion\Entities\Producto;
 
 class HomeController extends BaseController {
 
-	public function index()
-	{
-		return View::make('web/edad');
-	}
+    public function index()
+    {
+    	return View::make('web/edad');
+    }
 
     public function inicio(){
         return View::make('web/inicio');
@@ -32,6 +32,12 @@ class HomeController extends BaseController {
 
     public function contacto(){
         return View::make('web/contacto');
+    }
+
+    public function SI(){
+        Session::flush();
+        Session::push('mayoredad', 'SI');
+        return Redirect::to('inicio');
     }
 
 }

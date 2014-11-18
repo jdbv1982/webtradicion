@@ -202,14 +202,14 @@ nav
 				border-radius 10px
 				padding 5px 5px
 				cursor pointer
-				
+
 .content-slides
 	position relative
 	top 10px
 	left 10%
 	width 80%
 
-/*pagina de contacto*/	
+/*pagina de contacto*/
 
 legend
 	width 100%
@@ -223,13 +223,13 @@ legend
 			background url(../images/general/contacto.png) center no-repeat
 			height 13em
 			width 100%
-	
+
 	.contacto-map
 		width 100%
 		height 20em
 		background url(../images/general/contacto2.jpg) center no-repeat
 		background-size 100% 100%
-		
+
 	.menuproductos
 		width 100%
 		min-height 40px
@@ -244,19 +244,22 @@ legend
 			display inline-block
 			background url(../images/general/menuindividual.png) center no-repeat
 			background-size 90% 100%
-		
+
 	.Producto
-		img
-			width 20%
-			left 40%
-			position relative
-			height 13em
-			background-size 100% 100%
+		.imagen-producto
+			img
+				width 10%
+				left 45%
+				position relative
+				height 13em
+				background-size 100% 100%
+
+		.contenido-producto
 		&-img-pie
 			text-align center
 			font-size .8em
 			padding 1em 0.3em
-			
+
 		&-titulo
 			text-align center
 			font-size 1.3em
@@ -264,29 +267,54 @@ legend
 			margin 1em 0
 			border-bottom 1px solid letras
 			border-top 1px solid letras
-				
+
 		&-descripcion
 			text-align justify
 			padding 1em 0
 			margin  1em 0
-			
+
 		&-subtitulo
 			text-align center
 			font-size 1.3em
 			padding 1em 0
 			margin 1em 0
-			
+
 		&-subdescripcion
 			margin 1em 0
 			padding 1em 0
 			p
 				text-align justify
-				
-
-
 	.Acta
-		border 1px solid blue
-		
+		color letras
+
+/*css para proceso*/
+
+.contenido
+	border 1px solid red
+	.Proceso
+		border 1px solid green
+		&-justify
+			text-align justify
+		&-modal
+			border 1px solid blue
+		&-menu
+			border 10px solid yellow
+		&-contenido
+			border 1px solid yelow
+		&-titulo
+			text-align center
+			font-size 1.3em
+			border-top 1px solid letras
+			border-bottom 1px solid letras
+			padding 1em 0
+		&-subtitulo
+			text-align center
+			font-size 1em
+			padding 1em 0
+
+		&-right
+			border 1px solid letras
+
 
 @import "componentes.styl"
 @import "media.styl"

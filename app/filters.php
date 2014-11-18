@@ -33,6 +33,16 @@ App::after(function($request, $response)
 |
 */
 
+Route::filter('edad', function(){
+	if(! Session::has('mayoredad')){
+		$edad = Session::get('mayoredad');
+		if($edad != 'SI'){
+			return Redirect::to('/');
+		}
+	}
+});
+
+
 Route::filter('auth', function()
 {
 	if (Auth::guest())

@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-	var path = 'http://192.168.0.16/webtradicion/public';
+	//var path = 'http://192.168.0.16/webtradicion/public';
+	var path = 'http://172.17.68.211/webtradicion/public';
 
 	$(".rslides").responsiveSlides({
   		auto: true,
@@ -70,7 +71,7 @@ function getItem(url, id, path){
 
 			validaCampo($("#a-titulo"), data['tituloacta'],'Producto-titulo');
 
-			 
+
 		}
 
 	});

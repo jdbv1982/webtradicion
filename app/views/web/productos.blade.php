@@ -13,10 +13,13 @@
     		<div valor="8" class="menu item-menu">Licor de Café Huatulco</div>
     		<div valor="9" class="menu item-menu">Margarita Huatulco</div>
     	</div>
-    	<div class="Producto" id="img-producto">
+    	<div class="Producto">
+    		<div class="imagen-producto"  id="img-producto">
 	    		{{ HTML::image('images/general/mezcal-donaji-joven.jpg') }}
 	    		<div class="Producto-img-pie" id="img-pie">Donají es un tributo a la pureza del ‘Alma Grande’ de la princesa que murió para dar paz a los pueblos en discordia.
-	    		</div>   	
+	    		</div>
+	    	</div>
+	    	<div class="contenido-producto">
 	    	<div class="Producto-titulo" id="producto-titulo">DONAJÍ JOVEN</div>
 	    	<div class="Producto-descripcion" id="producto-descripcion">
 	    		Donají Joven es una bebida cristalina y pura que muestra la franqueza y calidad del emblemático agave espadín utilizado para su elaboración. Se caracteriza por la claridad de los tonos herbales que realzan su frescura, prueba de que un buen mezcal no necesita pasar por madera para ser suave.
@@ -31,11 +34,12 @@
 
 				<p>Al gusto: Al principio podemos percibir el sabor del agave recién cortado que va dando paso a tonos minerales y terrosos que derivan en un sabor herbal que permanece largo tiempo en la boca. Al final podemos apreciar en el retrogusto los matices ahumados que identificamos con el olfato previamente.</p>
 	    	</div>
+	    	</div>
     	</div>
 
     	<div class="Acta">
     		<div class="Acta-titulo Producto-titulo" id="a-titulo">ACTA DE ORIGEN</div>
-    		<div class="Acta-lef" id="aleft">
+    		<div class="Acta-left" id="aleft">
     			<p>
 					<em>Tipo de mezcal:</em> Joven.<br>
 					<br>

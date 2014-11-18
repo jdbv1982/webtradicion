@@ -272,13 +272,14 @@ legend {
   background: url("../images/general/menuindividual.png") center no-repeat;
   background-size: 90% 100%;
 }
-.contenido .Producto img {
-  width: 20%;
-  left: 40%;
+.contenido .Producto .imagen-producto img {
+  width: 10%;
+  left: 45%;
   position: relative;
   height: 13em;
   background-size: 100% 100%;
 }
+.contenido .Producto .contenido-producto,
 .contenido .Producto-img-pie {
   text-align: center;
   font-size: 0.8em;
@@ -311,7 +312,41 @@ legend {
   text-align: justify;
 }
 .contenido .Acta {
+  color: #9c9b87;
+}
+/*css para proceso*/
+.contenido {
+  border: 1px solid #f00;
+}
+.contenido .Proceso {
+  border: 1px solid #008000;
+}
+.contenido .Proceso-justify {
+  text-align: justify;
+}
+.contenido .Proceso-modal {
   border: 1px solid #00f;
+}
+.contenido .Proceso-menu {
+  border: 10px solid #ff0;
+}
+.contenido .Proceso-contenido {
+  border: 1px solid yelow;
+}
+.contenido .Proceso-titulo {
+  text-align: center;
+  font-size: 1.3em;
+  border-top: 1px solid #9c9b87;
+  border-bottom: 1px solid #9c9b87;
+  padding: 1em 0;
+}
+.contenido .Proceso-subtitulo {
+  text-align: center;
+  font-size: 1em;
+  padding: 1em 0;
+}
+.contenido .Proceso-right {
+  border: 1px solid #9c9b87;
 }
 .rslides {
   position: relative;
@@ -365,7 +400,7 @@ legend {
 .large-btns_nav :focus {
   outline: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width:769px) {
   nav {
     background: none;
     text-align: center;
@@ -444,46 +479,60 @@ legend {
   .contenido .contacto-map {
     height: 30em;
   }
-  .contenido .Producto {
-    border: 1px solid #f00;
+  .contenido .Producto .imagen-producto {
+    width: 49%;
+    display: inline-block;
   }
-  .contenido .Producto img {
-    top: 2em;
+  .contenido .Producto .imagen-producto img {
+    padding-top: 1em;
     width: 20%;
-    left: 5%;
+    left: 45%;
     position: relative;
-    height: 30em;
+    height: 27em;
     background-size: 100% 100%;
-    border: 1px solid #008000;
-    float: left;
+  }
+  .contenido .Producto .contenido-producto {
+    width: 49%;
+    display: inline-block;
   }
   .contenido .Producto-img-pie {
-    border: 1px solid #008000;
-    float: right;
-    width: 75%;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 1em 0.3em;
   }
   .contenido .Producto-titulo {
-    border: 1px solid #00f;
-    float: right;
-    width: 75%;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1em 0;
+    margin: 1em 0;
+    border-bottom: 1px solid #9c9b87;
+    border-top: 1px solid #9c9b87;
   }
   .contenido .Producto-descripcion {
-    border: 1px solid #008000;
-    float: right;
-    width: 75%;
+    text-align: justify;
+    padding: 1em 0;
+    margin: 1em 0;
   }
   .contenido .Producto-subtitulo {
-    border: 1px solid #008000;
-    float: right;
-    width: 75%;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1em 0;
+    margin: 1em 0;
   }
   .contenido .Producto-subdescripcion {
-    border: 1px solid #008000;
-    float: right;
-    width: 75%;
+    margin: 1em 0;
+    padding: 1em 0;
   }
-  .contenido .Acta {
-    width: 100%;
+  .contenido .Producto-subdescripcion p {
+    text-align: justify;
+  }
+  .contenido .Acta-left {
+    width: 49%;
+    display: inline-block;
+  }
+  .contenido .Acta-right {
+    width: 49%;
+    display: inline-block;
   }
   .inicio-subcontenido .inicio-desc {
     width: 45%;
