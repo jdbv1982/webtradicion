@@ -26,4 +26,5 @@ Route::get('contacto', ['as'=>'contacto', 'uses'=>'HomeController@contacto']);
 
 //Route::post('gethistoria', ['uses'=>'HistoriaController@getHistoria']);
 Route::post('gethistoria', ['uses'=>'HistoriaController@getHistoria']);
+Route::post('getitem', ['uses'=>'ProductoController@getItem']);
 

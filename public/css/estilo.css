@@ -232,6 +232,139 @@ nav .menu li a {
   padding: 5px 5px;
   cursor: pointer;
 }
+.content-slides {
+  position: relative;
+  top: 10px;
+  left: 10%;
+  width: 80%;
+}
+/*pagina de contacto*/
+legend {
+  width: 100%;
+  font-size: 2em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #9c9b87;
+}
+.contenido .contacto-img {
+  background: url("../images/general/contacto.png") center no-repeat;
+  height: 13em;
+  width: 100%;
+}
+.contenido .contacto-map {
+  width: 100%;
+  height: 20em;
+  background: url("../images/general/contacto2.jpg") center no-repeat;
+  background-size: 100% 100%;
+}
+.contenido .menuproductos {
+  width: 100%;
+  min-height: 40px;
+  text-align: center;
+}
+.contenido .menuproductos .menu {
+  cursor: pointer;
+  line-height: 40px;
+  color: #fff;
+  width: 180px;
+  font-size: 0.8em;
+  height: 40px;
+  display: inline-block;
+  background: url("../images/general/menuindividual.png") center no-repeat;
+  background-size: 90% 100%;
+}
+.contenido .Producto img {
+  width: 20%;
+  left: 40%;
+  position: relative;
+  height: 13em;
+  background-size: 100% 100%;
+}
+.contenido .Producto-img-pie {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1em 0.3em;
+}
+.contenido .Producto-titulo {
+  text-align: center;
+  font-size: 1.3em;
+  padding: 1em 0;
+  margin: 1em 0;
+  border-bottom: 1px solid #9c9b87;
+  border-top: 1px solid #9c9b87;
+}
+.contenido .Producto-descripcion {
+  text-align: justify;
+  padding: 1em 0;
+  margin: 1em 0;
+}
+.contenido .Producto-subtitulo {
+  text-align: center;
+  font-size: 1.3em;
+  padding: 1em 0;
+  margin: 1em 0;
+}
+.contenido .Producto-subdescripcion {
+  margin: 1em 0;
+  padding: 1em 0;
+}
+.contenido .Producto-subdescripcion p {
+  text-align: justify;
+}
+.contenido .Acta {
+  border: 1px solid #00f;
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.rslides li :first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+.large-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  opacity: 0.6;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #000 url("themes.gif") no-repeat left 50%;
+  width: 38px;
+}
+.large-btns_nav :active {
+  opacity: 1;
+}
+.large-btns_nav.next {
+  left: auto;
+  background-position: right 50%;
+  right: 0;
+}
+.large-btns_nav :focus {
+  outline: none;
+}
 @media screen and (min-width: 769px) {
   nav {
     background: none;
@@ -295,6 +428,62 @@ nav .menu li a {
   .contenido .generaciones .generacion {
     width: 30%;
     display: inline-block;
+  }
+  .contenido .contacto {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #9c9b87;
+  }
+  .contenido .contacto-img {
+    width: 49%;
+    display: inline-block;
+  }
+  .contenido .contacto-datos {
+    width: 49%;
+    display: inline-block;
+  }
+  .contenido .contacto-map {
+    height: 30em;
+  }
+  .contenido .Producto {
+    border: 1px solid #f00;
+  }
+  .contenido .Producto img {
+    top: 2em;
+    width: 20%;
+    left: 5%;
+    position: relative;
+    height: 30em;
+    background-size: 100% 100%;
+    border: 1px solid #008000;
+    float: left;
+  }
+  .contenido .Producto-img-pie {
+    border: 1px solid #008000;
+    float: right;
+    width: 75%;
+  }
+  .contenido .Producto-titulo {
+    border: 1px solid #00f;
+    float: right;
+    width: 75%;
+  }
+  .contenido .Producto-descripcion {
+    border: 1px solid #008000;
+    float: right;
+    width: 75%;
+  }
+  .contenido .Producto-subtitulo {
+    border: 1px solid #008000;
+    float: right;
+    width: 75%;
+  }
+  .contenido .Producto-subdescripcion {
+    border: 1px solid #008000;
+    float: right;
+    width: 75%;
+  }
+  .contenido .Acta {
+    width: 100%;
   }
   .inicio-subcontenido .inicio-desc {
     width: 45%;
