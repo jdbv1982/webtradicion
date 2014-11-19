@@ -1,5 +1,6 @@
 letras = #9C9B87
 menu-fondo = #DEDEDE
+color-fondo = #F6F5E1
 body
 	color letras
 	font-family Georgia, "Times New Roman", Times, serif
@@ -172,7 +173,7 @@ nav
 			cursor pointer
 			z-index 777
 	&-texto
-		background #F6F5E1
+		background color-fondo
 		width 100%
 		padding 1em 0 4em 0
 		.Historia-titulo
@@ -290,17 +291,12 @@ legend
 /*css para proceso*/
 
 .contenido
-	border 1px solid red
 	.Proceso
-		border 1px solid green
 		&-justify
 			text-align justify
-		&-modal
-			border 1px solid blue
 		&-menu
-			border 10px solid yellow
+			text-align center
 		&-contenido
-			border 1px solid yelow
 		&-titulo
 			text-align center
 			font-size 1.3em
@@ -315,6 +311,31 @@ legend
 		&-right
 			border 1px solid letras
 
+		&-item-menu
+			cursor pointer
+			padding 0 .1em
+			line-height 4.3em
+			color white
+			font-size 1.3em
+			font-weight bold
+			display inline-block
+			background url(../images/general/item-proceso.png) center no-repeat
+			width 10%
+			height 4em
+			background-size 100% 100%
+
+		&-img
+			text-align center
+			img
+				width 15em
+				background-size 100% 100%
+		&-modal-contenido
+			text-align center
+		&-modal-titulo
+			padding 1em 0
+			font-size 1.5em
+		&-modal-texto
+			text-align justify
 
 @import "componentes.styl"
 @import "media.styl"

@@ -315,24 +315,13 @@ legend {
   color: #9c9b87;
 }
 /*css para proceso*/
-.contenido {
-  border: 1px solid #f00;
-}
-.contenido .Proceso {
-  border: 1px solid #008000;
-}
 .contenido .Proceso-justify {
   text-align: justify;
 }
-.contenido .Proceso-modal {
-  border: 1px solid #00f;
-}
 .contenido .Proceso-menu {
-  border: 10px solid #ff0;
+  text-align: center;
 }
-.contenido .Proceso-contenido {
-  border: 1px solid yelow;
-}
+.contenido .Proceso-contenido,
 .contenido .Proceso-titulo {
   text-align: center;
   font-size: 1.3em;
@@ -347,6 +336,36 @@ legend {
 }
 .contenido .Proceso-right {
   border: 1px solid #9c9b87;
+}
+.contenido .Proceso-item-menu {
+  cursor: pointer;
+  padding: 0 0.1em;
+  line-height: 4.3em;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  display: inline-block;
+  background: url("../images/general/item-proceso.png") center no-repeat;
+  width: 10%;
+  height: 4em;
+  background-size: 100% 100%;
+}
+.contenido .Proceso-img {
+  text-align: center;
+}
+.contenido .Proceso-img img {
+  width: 15em;
+  background-size: 100% 100%;
+}
+.contenido .Proceso-modal-contenido {
+  text-align: center;
+}
+.contenido .Proceso-modal-titulo {
+  padding: 1em 0;
+  font-size: 1.5em;
+}
+.contenido .Proceso-modal-texto {
+  text-align: justify;
 }
 .rslides {
   position: relative;
@@ -561,6 +580,33 @@ legend {
   }
   .Historia-texto .Historia-menu {
     display: none;
+  }
+  .contenido .Proceso-modal {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #9c9b87;
+  }
+  .contenido .Proceso-img {
+    display: inline-block;
+    padding-right: 1em;
+  }
+  .contenido .Proceso-modal-contenido {
+    width: 70%;
+    font-size: 1em;
+    display: inline-block;
+  }
+  .contenido .Proceso-contenido {
+    font-size: 1em;
+    position: relative;
+    display: inline-flex;
+    text-align: center;
+  }
+  .contenido .Proceso-left {
+    width: 45%;
+    margin: 0 1em;
+  }
+  .contenido .Proceso-right {
+    width: 45%;
+    padding: 0 1em;
   }
 }
 @media screen and (min-width: 1280px) {

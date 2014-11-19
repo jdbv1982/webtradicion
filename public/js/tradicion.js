@@ -24,7 +24,35 @@ $(document).ready(function() {
 	$(document).on('click', '.item-menu', function(e){
 		getItem('getitem',$(this).attr('valor'), path);
 	});
+
+	$(document).on('click', '.Proceso-item-menu', function(e){
+		getProceso('getproceso',$(this).attr('valor'), path);
+	});
+
+
 });
+
+function getProceso(url, id, path){
+	$.ajax({
+		type: "POST",
+		dataType: "json",
+		url: url,
+		data: {id: id},
+		success: function(data){
+			$("#proceso-modal-contenido").hide();
+			$("#proceso-img").hide();
+
+			 $("#proceso-img >img").attr("src", path + data['urlimage']);
+			 $("#proceso-modal-titulo").html(data['titulo']);
+			 $("#proceso-modal-texto").html(data['contenido']);
+			$("#proceso-modal-contenido").slideDown(2000);
+			$("#proceso-img").slideDown(2000);
+
+		}
+
+	});
+
+}
 
 
 function getHistoria(url, id){
@@ -58,8 +86,6 @@ function getItem(url, id, path){
 				$("#img-producto >img").attr("src", '');
 			}
 
-
-
 			printContent($("#img-pie"), data['pieimagen']);
 			printContent($("#producto-titulo"), data['titulo']);
 			printContent($("#producto-descripcion"), data['descripcion']);
@@ -70,8 +96,6 @@ function getItem(url, id, path){
 			printContent($("#aright"), data['contenidoacta2']);
 
 			validaCampo($("#a-titulo"), data['tituloacta'],'Producto-titulo');
-
-
 		}
 
 	});

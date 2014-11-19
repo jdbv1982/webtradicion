@@ -20,5 +20,6 @@ Route::group(array('before'=>'edad'), function(){
 	//Route::post('gethistoria', ['uses'=>'HistoriaController@getHistoria']);
 	Route::post('gethistoria', ['uses'=>'HistoriaController@getHistoria']);
 	Route::post('getitem', ['uses'=>'ProductoController@getItem']);
+	Route::post('getproceso', ['uses'=>'ProcesoController@getProceso']);
 
 });

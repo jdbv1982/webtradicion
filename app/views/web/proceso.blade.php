@@ -5,20 +5,39 @@
 	<div class="Proceso">
 		<div class="Proceso-modal">
 			<div class="Proceso-menu">
-				menu de los procesos
+				<div valor="1" class="Proceso-item-menu">1</div>
+				<div valor="2" class="Proceso-item-menu">2</div>
+				<div valor="3" class="Proceso-item-menu">3</div>
+				<div valor="4" class="Proceso-item-menu">4</div>
+				<div valor="5" class="Proceso-item-menu">5</div>
+				<div valor="6" class="Proceso-item-menu">6</div>
+				<div valor="7" class="Proceso-item-menu">7</div>
+				<div valor="8" class="Proceso-item-menu">8</div>
 			</div>
 
-			<div class="Proceso-img">imagen del proceso</div>
-			<div class="Proceso-modal-contenido">
-				<div class="Proceso-modal-titulo">titulo</div>
-				<div class="Proceso-modal-texto">contenido</div>
-				<div class="Proceso-modal-img">imagen</div>
+			<div class="Proceso-img" id="proceso-img">
+				{{ HTML::image('images/general/proceso1.png') }}
+			</div>
+			<div class="Proceso-modal-contenido" id="proceso-modal-contenido">
+				<div class="Proceso-modal-titulo" id="proceso-modal-titulo">LA MATERIA PRIMA: LOS MAGUEYES</div>
+				<div class="Proceso-modal-texto" id="proceso-modal-texto">
+					<p>
+						Existen más de 150 especies de maguey exclusivas del territorio mexicano, de las cuales, más de 30 pueden utilizarse para hacer mezcal, siendo Oaxaca el estado con la mayor concentración y variedad de las mismas. En Oaxaca se suele intercalar los cultivos de maíz, calabazas y frijoles y magueyes; ya que así la tierra se mantiene mineralizada y en estado óptimo para la siembra.
+					</p>
+
+					<p>
+						Para la elaboración de los mezcales Tradición Chagoya, se utiliza exclusivamente el maguey Espadín, el cual tarda diez años en madurar, y es una de las variedades más finas y nobles de esta planta, características que lo han convertido en el maguey emblemático de Oaxaca.
+					</p>
+				</div>
+				<div class="Proceso-modal-img">
+					{{ HTML::image('images/general/detallech.png') }}
+				</div>
 			</div>
 		</div>
-		<!--div class="Proceso-contenido">
-			<div class="Proceso-menu">menu</div>
-			<div class="Proceso-descripcion">imagen con animaciones</div>
-		</div-->
+
+		<div class="Proceso-contenido">
+
+
 		<div class="Proceso-left">
 			<p class="Proceso-titulo">LA FÁBRICA</p>
 			<p class="Proceso-justify">
@@ -79,6 +98,7 @@
 				Este es el agave silvestre más preciado en el país. Crece en los peñascos de las partes más salvajes de las sierras oaxaqueñas. Debido a su pequeño tamaño y su limitado contenido en azúcares, el mezcal que se produce a base de esta especie es más caro que el elaborado con especies cultivables.
 			</p>
 
+		</div>
 		</div>
 	</div>
 </div>
