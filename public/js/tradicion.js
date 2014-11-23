@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
 	//var path = 'http://192.168.0.16/webtradicion/public';
-	var path = 'http://172.17.68.211/webtradicion/public';
+	//var path = 'http://192.168.0.16/webtradicion/public';
+	var path = 'http://192.168.0.26/webtradicion/public';
 
 	$(".rslides").responsiveSlides({
   		auto: true,
@@ -45,8 +46,8 @@ function getProceso(url, id, path){
 			 $("#proceso-img >img").attr("src", path + data['urlimage']);
 			 $("#proceso-modal-titulo").html(data['titulo']);
 			 $("#proceso-modal-texto").html(data['contenido']);
-			$("#proceso-modal-contenido").slideDown(2000);
-			$("#proceso-img").slideDown(2000);
+			$("#proceso-modal-contenido").slideDown(500);
+			$("#proceso-img").slideDown(500);
 
 		}
 

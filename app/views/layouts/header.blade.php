@@ -14,11 +14,11 @@
 		</a>
 	</div>
 	<div class="Redes-idiomas">
-		<a href="{{ route('home') }}">
+		<a href="{{ url('/') }}">
 			<div class="link-idioma">Español</div>
 		</a> |
-		<a href="{{ route('home') }}">
-			<div class="link-idioma">Ingles</div>
+		<a href="{{ url('/en/entrance') }}">
+			<div class="link-idioma">English</div>
 		</a>
 	</div>
 

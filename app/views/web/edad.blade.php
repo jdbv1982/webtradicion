@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="div-mensaje">
-    	<div class="div-pregunta">¿Tienes la edad legal mínima para consumir bebidas alcohólicas en el país en el que resides?</div>
-    	<div class="div-respuesta"><a name="edad" href="{{route('SI')}}">SI</a></div>
-    	<div class="div-respuesta borde-lateral-izquierdo"><a href="{{route('salir')}}">NO</a></div>
+    	<div class="div-pregunta">{{ trans('edad.pregunta') }}</div>
+    	<div class="div-respuesta"><a name="edad" href="{{route('SI')}}">{{ trans('edad.si') }}</a></div>
+    	<div class="div-respuesta borde-lateral-izquierdo"><a href="{{route('salir')}}">{{ trans('edad.no') }}</a></div>
     	<div class="div-imagen"></div>
     </div>
 
