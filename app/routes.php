@@ -17,7 +17,8 @@ Route::group(array('prefix' => $locale), function()
 
 	Route::group(array('before'=>'edad'), function(){
 
-		Route::get('inicio', ['as'=>'inicio', 'uses'=>'HomeController@inicio']);
+		//Route::get('inicio', ['as'=>'inicio', 'uses'=>'HomeController@inicio']);
+		Route::get(Lang::get('routes.inicio') , ['as'=>'inicio', 'uses'=>'HomeController@inicio']);
 		Route::get('productos', ['as'=>'productos', 'uses'=>'HomeController@productos']);
 
 

@@ -35,9 +35,23 @@ class HomeController extends BaseController {
     }
 
     public function SI(){
+
+        $locale = Request::segment(1);
+
+        if (in_array($locale, Config::get('app.available_locales'))) {
+            \App::setLocale($locale);
+        } else {
+            $locale = null;
+        }
+
         Session::flush();
         Session::push('mayoredad', 'SI');
-        return Redirect::to('inicio');
+
+        if($locale == 'en') {
+            return Redirect::to(Lang::get('en/home'));
+        }
+
+        return Redirect::to(Lang::get('inicio'));
     }
 
 }
