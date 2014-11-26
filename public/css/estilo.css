@@ -419,7 +419,7 @@ legend {
 .large-btns_nav :focus {
   outline: none;
 }
-@media screen and (min-width:769px) {
+@media screen and (min-width: 769px) {
   nav {
     background: none;
     text-align: center;
@@ -607,6 +607,252 @@ legend {
   .contenido .Proceso-right {
     width: 45%;
     padding: 0 1em;
+  }
+  .contenido .Proceso-item-menu {
+    cursor: pointer;
+    padding: 0 0.1em;
+    line-height: 4.3em;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: inline-block;
+    background: none;
+    width: 10%;
+    height: 4em;
+    background-size: 100% 100%;
+  }
+  #mod-proceso-container {
+    width: 643px;
+    height: 414px;
+    margin: 0 auto;
+  }
+  #mod-proceso-principal {
+    background: url("../images/general/proceso_pm.png") top center no-repeat;
+    width: 643px;
+    height: 414px;
+    margin: 0 auto;
+    position: absolute;
+  }
+  #mod-proceso-tabla {
+    background: url("../images/general/tablaproceso.png") top center no-repeat;
+    width: 643px;
+    height: 55px;
+    margin: 0 auto;
+    position: absolute;
+  }
+  #mod-proceso-proceso1 {
+    position: absolute;
+    width: 100px;
+    height: 181px;
+    left: 5px;
+    top: 189px;
+    cursor: pointer;
+  }
+  #mod-proceso-proceso2 {
+    position: absolute;
+    width: 87px;
+    height: 103px;
+    left: 88px;
+    top: 84px;
+    cursor: pointer;
+  }
+  #mod-proceso-proceso3 {
+    position: absolute;
+    width: 55px;
+    height: 256px;
+    left: 178px;
+    top: 44px;
+    cursor: pointer;
+  }
+  #mod-proceso-proceso4 {
+    position: absolute;
+    width: 72px;
+    height: 147px;
+    left: 235px;
+    top: 147px;
+    cursor: pointer;
+  }
+  #mod-proceso-proceso5 {
+    position: absolute;
+    width: 180px;
+    height: 92px;
+    left: 230px;
+    top: 298px;
+    cursor: pointer;
+  }
+  #mod-proceso-proceso6 {
+    position: absolute;
+    width: 131px;
+    height: 140px;
+    left: 310px;
+    top: 150px;
+    cursor: pointer;
+  }
+  #mod-proceso-proceso7 {
+    position: absolute;
+    width: 56px;
+    height: 211px;
+    left: 446px;
+    top: 149px;
+    cursor: pointer;
+  }
+  #mod-proceso-proceso8 {
+    position: absolute;
+    width: 123px;
+    height: 154px;
+    left: 507px;
+    top: 238px;
+    cursor: pointer;
+  }
+  #mod-proceso-links {
+    display: none;
+  }
+  #mod-proceso-tabla2 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 273px;
+    top: 27px;
+    cursor: pointer;
+  }
+  #mod-proceso-tabla3 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 301px;
+    top: 27px;
+    cursor: pointer;
+  }
+  #mod-proceso-tabla4 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 324px;
+    top: 24px;
+    cursor: pointer;
+  }
+  #mod-proceso-tabla5 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 348px;
+    top: 25px;
+    cursor: pointer;
+  }
+  #mod-proceso-tabla6 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 370px;
+    top: 26px;
+    cursor: pointer;
+  }
+  #mod-proceso-tabla7 {
+    position: absolute;
+    width: 15px;
+    height: 15;
+    left: 393px;
+    top: 24px;
+    cursor: pointer;
+  }
+  #mod-proceso-tabla8 {
+    position: absolute;
+    width: 15px;
+    height: 15;
+    left: 419px;
+    top: 25px;
+    cursor: pointer;
+  }
+  #mod-proceso-tabla9 {
+    position: absolute;
+    width: 15px;
+    height: 15;
+    left: 442px;
+    top: 25px;
+    cursor: pointer;
+  }
+  #mod-proceso-maguey1 {
+    background: url("../images/general/maguey1.png") top center no-repeat;
+    width: 39px;
+    height: 34px;
+    cursor: pointer;
+    left: 125px;
+    top: 163px;
+    position: absolute;
+    transition: 2s;
+    animation: ease-in-out;
+  }
+  #mod-proceso-maguey2 {
+    background: url("../images/general/maguey2.png") top center no-repeat;
+    width: 39px;
+    height: 34px;
+    cursor: pointer;
+    left: 138px;
+    top: 193px;
+    position: absolute;
+    transition: 2s;
+    animation: ease-in-out;
+  }
+  #mod-proceso-maguey3 {
+    background: url("../images/general/maguey3.png") top center no-repeat;
+    width: 39px;
+    height: 29px;
+    cursor: pointer;
+    left: 126px;
+    top: 228px;
+    position: absolute;
+    transition: 2s;
+    animation: ease-in-out;
+  }
+  #mod-proceso-humo {
+    background: url("../images/general/humo.png") top center no-repeat;
+    width: 136px;
+    height: 284px;
+    cursor: pointer;
+    left: 85px;
+    top: 0px;
+    position: absolute;
+    z-index: 10;
+  }
+  #mod-proceso-burro {
+    background: url("../images/general/burro.png") top center no-repeat;
+    width: 72px;
+    height: 72px;
+/*cursor pointer;*/
+    left: 235px;
+    top: 155px;
+    position: absolute;
+  }
+  #mod-proceso-gusano {
+    background: url("../images/general/gusano.png") top center no-repeat;
+    width: 20px;
+    height: 17px;
+    cursor: pointer;
+    left: 85px;
+    top: 205px;
+    position: absolute;
+  }
+  #mod-proceso-ramas {
+    background: url("../images/general/ramas.png") top center no-repeat;
+    width: 129px;
+    height: 204px;
+    left: 506px;
+    top: 9px;
+    position: absolute;
+    animation: 3s ease 0s normal none infinite swing;
+  }
+  #mod-proceso-fuego {
+/*background: url("../images/general/fuego.png") top center no-repeat;*/
+    width: 36px;
+    height: 50px;
+    cursor: pointer;
+    left: 378px;
+    top: 184px;
+    position: absolute;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
   }
 }
 @media screen and (min-width: 1280px) {

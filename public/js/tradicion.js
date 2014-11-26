@@ -30,6 +30,26 @@ $(document).ready(function() {
 		getProceso('getproceso',$(this).attr('valor'), path);
 	});
 
+/*animaciones*/
+rotate ('#mod-proceso-maguey1');
+rotate ('#mod-proceso-maguey2');
+rotate ('#mod-proceso-maguey3');
+
+jQuery("#mod-proceso-humo").dynamiccloudeffect ({demo:"demo3"});
+
+jQuery('#mod-proceso-fuego').fire({
+		maxPow:0,
+		speed:20,
+		fireTransparency:35,
+		globalTransparency:10,
+		minPow:0,
+		gravity:5,
+		fadingFlameSpeed:3,
+		yOffset:0,
+		flameHeight:1,
+		maxPowZone:"center",
+		flameWidth:3
+	});
 
 });
 
@@ -117,3 +137,25 @@ function validaCampo(ele, valor, clasecss){
 		ele.addClass(clasecss);
 	}
 }
+
+
+function rotate (elementID) {
+
+    var rota = jQuery(elementID),
+        degree = 0,
+        timer;
+
+    function spin() {
+        rota.css({ transform: 'rotate(' + degree + 'deg)'});
+		plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+		randAngle = Math.floor(Math.random()*70+50) * plusOrMinus;
+		randDelay = Math.floor(Math.random()*1000+2000);
+        timer = setTimeout(function() {
+            degree += randAngle;
+            spin(); // loop it
+        },randDelay);
+    }
+
+    spin();    // run it!
+
+};
