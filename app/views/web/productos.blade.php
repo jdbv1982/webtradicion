@@ -15,7 +15,7 @@
     	</div>
     	<div class="Producto">
     		<div class="imagen-producto"  id="img-producto">
-	    		{{ HTML::image('images/general/mezcal-donaji-joven.jpg') }}
+	    		{{ HTML::image('images/general/productos/mezcal-donaji-joven.jpg') }}
 	    		<div class="Producto-img-pie" id="img-pie">Donají es un tributo a la pureza del ‘Alma Grande’ de la princesa que murió para dar paz a los pueblos en discordia.
 	    		</div>
 	    	</div>

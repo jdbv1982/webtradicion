@@ -90,7 +90,7 @@
 		</div>
 
 			<div class="Proceso-img" id="proceso-img">
-				{{ HTML::image('images/general/proceso1.png') }}
+				{{ HTML::image('images/general/proceso/proceso1.jpg') }}
 			</div>
 			<div class="Proceso-modal-contenido" id="proceso-modal-contenido">
 				<div class="Proceso-modal-titulo" id="proceso-modal-titulo">LA MATERIA PRIMA: LOS MAGUEYES</div>
