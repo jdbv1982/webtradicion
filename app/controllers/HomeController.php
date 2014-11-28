@@ -30,6 +30,11 @@ class HomeController extends BaseController {
         return View::make('web/productos');
     }
 
+    public function producto($id){
+        $producto = Producto::find($id);
+        return View::make('web/producto', compact('producto'));
+    }
+
     public function contacto(){
         return View::make('web/contacto');
     }

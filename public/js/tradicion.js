@@ -24,9 +24,9 @@ $(document).ready(function() {
 		getHistoria('gethistoria', $(this).attr('valor'), path);
 	});
 
-	$(document).on('click', '.item-menu', function(e){
+	/*$(document).on('click', '.item-menu', function(e){
 		getItem('getitem',$(this).attr('valor'), path);
-	});
+	});*/
 
 	$(document).on('click', '.Proceso-item-menu', function(e){
 		getProceso('getproceso',$(this).attr('valor'), path);
@@ -140,7 +140,13 @@ function getHistoria(url, id, path){
 }
 
 
-function getItem(url, id, path){
+/*function getItem(url, id, path){
+	var url = window.location.href;
+	var segmentos = url.split("/");
+	var seccion = segmentos[segmentos.length-1];
+	if(seccion != "productos" || seccion != "productos#"){
+		window.location.href = path + '/productos';
+	}
 	$.ajax({
 		type: "POST",
 		dataType: "json",
@@ -167,7 +173,7 @@ function getItem(url, id, path){
 		}
 
 	});
-}
+}*/
 
 function printContent(ele, valor){
 	if(valor == ""){

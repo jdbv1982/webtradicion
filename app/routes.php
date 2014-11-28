@@ -26,6 +26,7 @@ Route::group(array('prefix' => $locale), function()
 		Route::get('historia', ['as'=>'historia', 'uses'=>'HomeController@historia']);
 		Route::get('proceso', ['as'=>'proceso', 'uses'=>'HomeController@proceso']);
 		Route::get('productos', ['as'=>'productos', 'uses'=>'HomeController@productos']);
+		Route::get('producto/{id}', ['as'=>'producto', 'uses'=>'HomeController@producto']);
 		Route::get('contacto', ['as'=>'contacto', 'uses'=>'HomeController@contacto']);
 
 		//Route::post('gethistoria', ['uses'=>'HistoriaController@getHistoria']);
