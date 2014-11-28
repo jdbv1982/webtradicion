@@ -26,6 +26,27 @@ nav .menu li a {
   margin: 0.5em 0.5em;
   text-decoration: none;
 }
+.submenu {
+  border: 1px solid #9c9b87;
+  width: 230px;
+  position: absolute;
+  z-index: 10001;
+  left: 55%;
+  background: #fff;
+  display: none;
+}
+.submenu ul {
+  margin: 0;
+  padding: 0 1em;
+}
+.submenu ul li {
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+}
+.submenu ul li a {
+  color: #9c9b87;
+}
 .full-content {
   position: relative;
   padding-bottom: 1em;
@@ -169,7 +190,7 @@ nav .menu li a {
 }
 .contenido .inicio-subcontenido .promocion .promocion-img {
   min-height: 10em;
-  background: url("../images/general/mezcal-cuerudos-anejo.png") center no-repeat;
+  background: url("../images/general/productos/mezcal-cuerudos-anejo.jpg") center no-repeat;
   background-size: 10% 100%;
   margin: 0 auto;
   padding: 1em;
@@ -261,6 +282,7 @@ legend {
   width: 100%;
   min-height: 40px;
   text-align: center;
+  display: none;
 }
 .contenido .menuproductos .menu {
   cursor: pointer;
@@ -375,8 +397,6 @@ legend {
   width: 100%;
   padding: 0;
   margin: 0;
-  width: 250px;
-  height: 200px;
 }
 .rslides li {
   -webkit-backface-visibility: hidden;
@@ -397,7 +417,6 @@ legend {
   float: left;
   width: 100%;
   border: 0;
-  text-align: center;
 }
 .large-btns_nav {
   z-index: 3;
@@ -423,7 +442,7 @@ legend {
 .large-btns_nav :focus {
   outline: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width:769px) {
   nav {
     background: none;
     text-align: center;
@@ -503,7 +522,7 @@ legend {
     height: 30em;
   }
   .contenido .Producto .imagen-producto {
-    width: 49%;
+    width: 40%;
     display: inline-block;
   }
   .contenido .Producto .imagen-producto img {
@@ -513,7 +532,8 @@ legend {
     height: 30em;
   }
   .contenido .Producto .contenido-producto {
-    width: 49%;
+    width: 40%;
+    margin-left: 5%;
     display: inline-block;
   }
   .contenido .Producto-img-pie {
@@ -548,15 +568,17 @@ legend {
     text-align: justify;
   }
   .contenido .Acta-left {
-    width: 49%;
+    width: 40%;
     display: inline-block;
+    margin-left: 5%;
   }
   .contenido .Acta-right {
-    width: 49%;
+    width: 40%;
     display: inline-block;
+    margin-left: 10%;
   }
   .inicio-subcontenido .inicio-desc {
-    width: 45%;
+    width: 44%;
     display: inline-block;
     margin-left: 1em;
   }
@@ -582,7 +604,17 @@ legend {
     box-shadow: 10px 10px 5px #999;
     padding: 1em 2em 4em 2em;
   }
-  .Historia-texto .Historia-menu {
+  .Historia-texto .quintag img {
+    margin-left: 40%;
+    width: 20%;
+  }
+  .Historia-img img {
+    border: 1px solid #f00;
+    width: 100%;
+    max-height: 200px;
+    margin: 0 auto;
+  }
+  .Historia-img .Historia-menu {
     display: none;
   }
   .contenido .Proceso-modal {
