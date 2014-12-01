@@ -13,6 +13,10 @@ class HistoriaController extends BaseController {
 
 	public function getHistoria(){
 		$id = $_POST['id'];
-		return Response::json($this->historiaRepo->find($id));
+		$seccion = $_POST['idioma'];
+
+		$id = $seccion == 'history' ? $id + 10 : $id;
+
+		return Response::json($this->historiaRepo->find($id, $seccion));
 	}
 }

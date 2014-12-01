@@ -1,0 +1,25 @@
+<?php
+
+return [
+	'titulo' => 'THE FACTORY',
+	'descripcion-titulo' => 'Our Factory was founded in the town of Villa Díaz Ordaz in the year 1890. Five generations later, it can be found in the municipal of <strong>Tlacolula de Matamoros</strong>, in the magnificent central valleys of Oaxaca. It is here as well that one will find sown fields of maguey plants, just beginning their journey in the magical transformation that is the elaboration of mezcal. The valley of Tlacolula, home to our factory, is a true testament to the process from which the one and only Mezcal con Tradición is born.<br>',
+	'botella' => 'THE BOTTLE',
+	'descripcion-botella' => '<em><strong>The Tradición Chagoya</strong></em> bottles are personal designs of the family that were especially created to hold our mezcals and liquors. Their attainment is made possible thanks to the dedication of the Oaxacan glass artisans who carefully examine both the history of our company and of Oaxaca to create an authentic and dignified design that demonstrates to the world that which is mezcal, <em><strong>Tradición Chagoya</strong></em>, and the state of Oaxaca, Mexico.<br><br>
+In every step of the process of creating the bottles, their volume, transparency and beauty is verified. During this process, 11 distinct criteria are employed to insure the high quality that characterizes our Oaxacan spirits. Every bottle, created to be considered a work of art, is individually washed in mezcal “joven” before the bottling process begins. This action makes it possible to prepare the adequate environment to receive the authentic Mezcal with Tradition, after which our team individually and carefully label the bottles and wipe them free of any particles.<br><br>
+The final product is then hand packed before it is sent out into the world to be enjoyed by enthusiasts and lovers of good mezcal.<br>',
+	'titulo1' => 'OAXACA AND ITS DIVERSE AGAVES',
+	'titulo1_1' => '<strong>ARROQUEÑO (Agave Americana var. Oaxacensis)</strong>',
+	'descripcion-titulo1_1' => 'This species was the first to be named “Agave” by Linnaeus. Its origin is in the northeast of Mexico, but it was brought to the south by various groups who migrated in this direction. This variety of mezcal, scientifically named oaxacensis, is popularly named maguey arroqueño in the valleys of Oaxaca, and is characterized for a sweetness that separates it from the rest of the agaves.',
+	'titulo1_2'=>'<strong>CIRIALES (Agave Karwinski)</strong>',
+	'descripcion-titulo1_2' => 'This species, denominated karwinski, is made up of a large number of sub species characterized as being geomorphic, meaning their appearance varies depending on the altitude and terrain in which they are found. This species is spread out over the entire valley and part of the southern highlands, where it is known by Zapotec names such as: bicuish, dob-cirial, madrecuish, or tobasiche.',
+	'titulo1_3' => '<strong>ESPADÍN (Agave Angustifolia Haw)</strong>',
+	'descripcion-titulo1_3' => 'This agave is the most emblematic of the agaves in the valleys of Oaxaca as well as a direct ancestor of the famous “Blue Agave”. As a wild species it is found in the main western highlands in the south and southeast of Mexico. It is the principal maguey cultivated for the production of mezcal because of its short maturation period of 5 to 7 years, and its easy propagation of the young maguey plant. More than 90% of bottled mezcal comes from this species of agave.',
+	'titulo1_4' => '<strong>MEXICANO (Agave Rhodacantha)</strong>',
+	'descripcion-titulo1_4' => 'The name of this agave is inspired by greek mythology, for the great architectural work that is located on the island of Rhodes. It is characterized by large thin leaves with tones that range from a greyish green to a bright green. It is found in the foot of the mountains in the main western and southern highlands of Mexico, from Sonora all the way to Oaxaca.',
+	'titulo1_5' => '<strong>TEPEZTATE (Agave Marmorata)</strong>',
+	'descripcion-titulo1_5' => 'One of the most appreciated wild agaves for its characteristic flavor, it is found in the lowland forests and brush lands of the main southern highlands, from the eastern end of the basin of the Balsas River to the Isthmus of Tehuantepec.',
+	'titulo1_6' => '<strong>PAPALOMÉTL (Agave Cupreata)</strong>',
+	'descripcion-titulo1_6' => 'Popularly known as Papalomé or Papalote, this is a wild agave endemic to the basin of the Balsas River, and thus the principal species used in the production of the mezcals from Guerrero and Michoacán. Its location also extends through the mixtec region of Oaxaca and it is famous for its unique flavor.',
+	'titulo1_7' => '<strong>TOBALÁ (Agave Potatorum)</strong>',
+	'descripcion-titulo1_7' => 'This is the most cherished of the wild agaves in the country. It grows in the rocks of the most extreme wilderness of the Oaxacan mountains. Due to its small size and limited sugar content, the mezcal that is produced from this species is more expensive than the mezcal made with cultivable species.'
+];

@@ -668,6 +668,7 @@ legend {
     height: 414px;
     margin: 0 auto;
     position: absolute;
+    z-index: 0;
   }
   #mod-proceso-tabla {
     background: url("../images/general/tablaproceso.png") top center no-repeat;

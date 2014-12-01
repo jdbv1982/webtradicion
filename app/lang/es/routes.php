@@ -4,5 +4,7 @@ return [
 	'home' => '/',
 	'salir' => 'salir',
 	'SI' => 'SI',
-	'inicio' => 'inicio'
+	'inicio' => 'inicio',
+	'historia' => 'historia',
+	'proceso' => 'proceso'
 ];

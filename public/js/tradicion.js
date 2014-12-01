@@ -4,7 +4,11 @@ $(document).ready(function() {
 	//var path = 'http://192.168.0.16/webtradicion/public';
 	var path = 'http://172.17.68.211/tradicion/public';
 
-	$("#proceso-img").hide();
+	var url = window.location.pathname;
+	var segmentos = url.split("/");
+	var seccion = segmentos[segmentos.length -1];
+
+//	$("#proceso-img").hide();
 
 	$(".rslides").responsiveSlides({
   		auto: true,
@@ -15,13 +19,13 @@ $(document).ready(function() {
         namespace: "large-btns"
 	});
 
-	getHistoria('gethistoria', 1, path );
+	getHistoria('gethistoria', 1, path, seccion );
 	$(document).on('click','.menuhistoria', function(e){
-		getHistoria('gethistoria', $(this).attr('valor') );
+		getHistoria('gethistoria', $(this).attr('valor'), seccion );
 	});
 
 	$(document).on('mouseover','.menu-arbol-historia', function(e){
-		getHistoria('gethistoria', $(this).attr('valor'), path);
+		getHistoria('gethistoria', $(this).attr('valor'), path, seccion);
 	});
 
 	/*$(document).on('click', '.item-menu', function(e){
@@ -89,14 +93,14 @@ function getProceso(url, id, path){
 }
 
 
-function getHistoria(url, id, path){
+function getHistoria(url, id, path, idioma){
 	$("#imgloader").show();
 
 	$.ajax({
 		type: "POST",
 		dataType: "json",
 		url: url,
-		data: {id: id},
+		data: {id: id, idioma: idioma},
 		success: function(data){
 			$("#titulo").html(data['titulo']);
 			$("#Historia-contenido").html(data['contenido']);
