@@ -11,6 +11,10 @@ class ProcesoController extends BaseController {
 
 	public function getProceso(){
 		$id = $_POST['id'];
+		$seccion = $_POST['seccion'];
+
+		$id = $seccion == 'process' ? $id + 10 : $id;
+
 		return Response::json($this->procesoRepo->find($id));
 	}
 }

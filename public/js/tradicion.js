@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
 	//var path = 'http://192.168.0.11/webtradicionlocal/public';
-	//var path = 'http://192.168.0.16/webtradicion/public';
-	var path = 'http://172.17.68.211/tradicion/public';
+	var path = 'http://192.168.0.13/tradicion/public';
+	//var path = 'http://172.17.68.211/tradicion/public';
 
 	var url = window.location.pathname;
 	var segmentos = url.split("/");
@@ -31,9 +31,9 @@ $(document).ready(function() {
 	/*$(document).on('click', '.item-menu', function(e){
 		getItem('getitem',$(this).attr('valor'), path);
 	});*/
-
+	getProceso('getproceso',1, path, seccion);
 	$(document).on('click', '.Proceso-item-menu', function(e){
-		getProceso('getproceso',$(this).attr('valor'), path);
+		getProceso('getproceso',$(this).attr('valor'), path, seccion);
 	});
 
 
@@ -69,12 +69,12 @@ jQuery('#mod-proceso-fuego').fire({
 
 });
 
-function getProceso(url, id, path){
+function getProceso(url, id, path, seccion){
 	$.ajax({
 		type: "POST",
 		dataType: "json",
 		url: url,
-		data: {id: id},
+		data: {id: id, seccion:seccion},
 		success: function(data){
 			$("#proceso-modal-contenido").hide();
 			$("#proceso-img").hide();

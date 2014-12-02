@@ -443,7 +443,7 @@ legend {
 .large-btns_nav :focus {
   outline: none;
 }
-@media screen and (min-width:769px) {
+@media screen and (min-width: 769px) {
   nav {
     background: none;
     text-align: center;
@@ -528,7 +528,7 @@ legend {
   }
   .contenido .Producto .imagen-producto img {
     padding-top: 1em;
-    width: 8em;
+    width: 6em;
     position: relative;
     height: 30em;
   }
@@ -624,6 +624,7 @@ legend {
   .contenido .Proceso-img {
     display: inline-block;
     padding-right: 1em;
+    border: 1px solid #f00;
   }
   .contenido .Proceso-modal-contenido {
     width: 70%;
