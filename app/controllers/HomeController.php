@@ -31,6 +31,8 @@ class HomeController extends BaseController {
     }
 
     public function producto($id){
+        $locale = $this->getIdioma();
+        $id = $locale == "en" ? $id+20 : $id;
         $producto = Producto::find($id);
         return View::make('web/producto', compact('producto'));
     }
@@ -41,13 +43,7 @@ class HomeController extends BaseController {
 
     public function SI(){
 
-        $locale = Request::segment(1);
-
-        if (in_array($locale, Config::get('app.available_locales'))) {
-            \App::setLocale($locale);
-        } else {
-            $locale = null;
-        }
+        $locale = $this->getIdioma();
 
         Session::flush();
         Session::push('mayoredad', 'SI');
@@ -58,5 +54,19 @@ class HomeController extends BaseController {
 
         return Redirect::to(Lang::get('inicio'));
     }
+
+
+    public function getIdioma(){
+        $locale = Request::segment(1);
+
+        if (in_array($locale, Config::get('app.available_locales'))) {
+            \App::setLocale($locale);
+        } else {
+            $locale = null;
+        }
+        return $locale;
+    }
+
+
 
 }

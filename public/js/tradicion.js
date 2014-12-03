@@ -41,7 +41,12 @@ $(document).ready(function() {
 
 	$(document).on('mouseover', '#vermenuproductos', function(e){
 		e.preventDefault();
-		$("#submenu").slideToggle();
+		$("#submenu").slideDown();
+	});
+
+	$(document).on('mouseleave', '#submenu', function(e){
+		e.preventDefault();
+		$("#submenu").slideUp();
 	});
 
 
